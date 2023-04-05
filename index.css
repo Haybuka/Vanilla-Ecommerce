@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 62.4%;
+}
+header {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.407);
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+}
+
+header .nav-items {
+  display: flex;
+}
+header h2 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  /* font-family: 'Poppins',sans-serif; */
+  /* letter-spacing: 0.15rem; */
+}
+header .nav-items li {
+  margin: 0 1rem;
+}
+
+header .nav-items a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #000;
+}
+
+.hero {
+  height: 600px;
+  padding: 10px 30px;
+  /* background-color: rgb(68, 0, 255); */
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.hero article {
+  grid-column: 1/7;
+}
+.hero-lead_text {
+  font-size: 6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-lead_text span {
+  display: block;
+}
+
+.hero-text {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.hero-img_grid {
+  background-color: orangered;
+  width: 100%;
+  height: 100%;
+  grid-column: 7/13;
+}
+
+
+/* curated picks section */
+
+.curated-picks {
+  padding: 10px 30px;
+  /* background-color: red; */
+  margin: 40px 0;
+}
+.curated-picks h3 {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  margin: 2rem 0;
+}
+
+.curated-picks_card {
+  height: 280px;
+  width: 280px;
+  border-radius: 15px;
+  /* background-color: #23da23; */
+  display: flex;
+  align-items: end;
+  padding: 20px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.459);
+}
+
+.curated-picks_card h4 {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 15px;
+  padding: 10px 15px;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.curated-picks_card span {
+  display: block;
+  /* font-weight: 700; */
+
+}
+
+.curated-picks_card svg {
+  width: 40px;
+  height: 30px;
+}
+
+.curated-picks article {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* Featured products section */
+@media screen and (max-width: 500px) {
+  .hero-img_grid {
+    display: none;
+  }
+}
