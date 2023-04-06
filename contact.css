@@ -9,6 +9,8 @@
 
 :root {
   --base-color: rgb(24, 23, 25);
+  --red-color : #b11e1e;
+  --blue-color : rgb(33, 33, 187);
   --text-white: rgb(255, 255, 255);
   --box-shadow: rgba(0, 0, 0, 0.407);
 }
@@ -47,45 +49,74 @@ header a {
   font-size: 2rem;
   color: var(--base-color);
 }
+body.default .hero{
+  background-color: var(--base-color);
+}
 
+body.red .hero{
+  background-color: var(--red-color);
+}
+
+body.blue .hero{
+  background-color: var(--blue-color);
+
+}
 .hero {
   height: 60rem;
   padding: 2rem 3rem;
-  background-color: var(--base-color);
   margin: 6rem 0;
   display: flex;
   align-items: center;
   background-attachment: fixed;
 }
 
+
 .hero h3 {
   font-size: 4rem;
   color: var(--text-white);
 }
+.color-changer{
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
 
-form{
-    padding : 2rem 0;
+.color-changer p{
+  font-size: 1.8rem;
+  margin: 0 2rem;
+  box-shadow: .1rem .1rem .5rem rgba(0, 0, 0, 0.403);
+  padding: .5rem 2rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  cursor: pointer;
 }
-form label {
-  display: block;
+main{
+  padding: 2rem ;
+}
+table{
   width: 100%;
-  height: 0rem;
-  background-color: red;
-  margin: 6rem 0;
 }
-main {
+table th,table td{
+  font-size: 2rem;
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+footer {
+  text-align: center;
   padding: 3rem;
-}
-form input {
-  background-color: yellow;
-  height: 3rem;
-  margin: 4rem 0;
-  width: 100%;
-  font-size: 2rem;
-  padding: 2rem 1rem;
+  background-color: rgba(161, 161, 161, 0.325);
+
+  margin-top: 2rem;
 }
 
-textarea {
-  width: 100%;
-  font-size: 2rem;
+footer p {
+  font-size: 1.5rem;
+  color: #1f1d1d;
 }
