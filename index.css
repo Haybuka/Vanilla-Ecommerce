@@ -6,6 +6,7 @@
   font-size: 62.4%;
   font-family: "Poppins", sans-serif;
 }
+
 header {
   box-shadow: .1rem .1rem .5rem rgba(0, 0, 0, 0.407);
   position: fixed;
@@ -295,6 +296,29 @@ footer {
 footer p {
   font-size: 1.5rem;
   color: #1f1d1d;
+}
+
+/* notification */
+.notif{
+  background-color: #fff;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.288);
+  padding:  10px ;
+  border-radius: 1rem;
+  width: 300px;
+  font-size: 1.5rem;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.notif-error{
+  color: rgb(178, 23, 23);
+}
+
+.notif-success{
+  color: rgb(10, 149, 40);
 }
 @media screen and (max-width: 900px) {
   .hero {
