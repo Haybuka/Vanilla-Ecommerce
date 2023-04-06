@@ -120,3 +120,12 @@ footer p {
   font-size: 1.5rem;
   color: #1f1d1d;
 }
+
+@media screen and (max-width: 670px) {
+  table{
+    width: auto;
+  }
+  th:nth-child(2), td:nth-child(2){
+    /* display: none; */
+  }
+}
