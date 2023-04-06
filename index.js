@@ -4,6 +4,8 @@ let form = document.querySelector("form");
 form.addEventListener("submit", function (event) {
   event.preventDefault();
   let emailInput = this[0];
+
+  //conditional
   if (emailInput.value == "" || !emailInput.value.includes("@")) {
     console.log("empty input field");
     createNotification("Invalid email address", "notif-error");
@@ -19,6 +21,7 @@ form.addEventListener("submit", function (event) {
   emailInput.value = ''
 });
 
+//creating notification
 let createNotification = (text, notifType) => {
   let body = document.querySelector("body");
   const notif = document.createElement("p");
