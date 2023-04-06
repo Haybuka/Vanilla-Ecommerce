@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 62.4%;
+  font-family: "poppins", sans-serif;
+}
+
+:root {
+  --base-color: rgb(24, 23, 25);
+  --text-white: rgb(255, 255, 255);
+  --box-shadow: rgba(0, 0, 0, 0.407);
+}
+header {
+  box-shadow: 0.1rem 0.1rem 0.5rem var(--box-shadow);
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+header .nav-items {
+  display: flex;
+}
+header h2 span{
+  font-size: 2rem;
+  text-transform: uppercase;
+  display: block;
+}
+header h2 span:nth-child(2){
+  transform: translate(10px,-5px);
+}
+header .nav-items li {
+  margin: 0 1rem;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: var(--base-color);
+}
+
+.hero {
+  height: 60rem;
+  padding: 2rem 3rem;
+  background-color: var(--base-color);
+  margin: 6rem 0;
+  display: flex;
+  align-items: center;
+  background-attachment: fixed;
+}
+
+.hero h3 {
+  font-size: 4rem;
+  color: var(--text-white);
+}
+
+form{
+    padding : 2rem 0;
+}
+form label {
+  display: block;
+  width: 100%;
+  height: 0rem;
+  background-color: red;
+  margin: 6rem 0;
+}
+main {
+  padding: 3rem;
+}
+form input {
+  background-color: yellow;
+  height: 3rem;
+  margin: 4rem 0;
+  width: 100%;
+  font-size: 2rem;
+  padding: 2rem 1rem;
+}
+
+textarea {
+  width: 100%;
+  font-size: 2rem;
+}
